@@ -18,6 +18,13 @@ This project is inspired from the textbook Algorithms, 4th Edition by Robert Sed
 
 	Our original goal for this book was to cover the 50 algorithms that every programmer should know. We use the word programmer to refer to anyone engaged in trying to accomplish something with the help of a computer, including scientists, engineers, and applications developers, not to mention college students in science, engineering, and computer science.
 
+However, the algorithms for this project are not simply a ported version of the algorithms found in the book. Rather they are implemented from the scratch following Pythonic coding style. Most of the algorithms are well known and can be found in many books and sites.
 
+Features
+--------
+
+* Mainly for educational purpose, but can be useful in certain cituations.
+* Consecuently, built-in algorithms are not used, rather fully implemented from the scratch.
+* Preference towards pythonic code rather than OOP.
 * Free software: BSD license
 * Documentation: http://python_algorithms.rtfd.org.
