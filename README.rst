@@ -12,12 +12,10 @@ Python Algorithms
         :target: https://crate.io/packages/python_algorithms?version=latest
 
 
-Python Algorithms contains a collection of useful algorithms written in python.
+Python Algorithms contains a collection of useful algorithms written in python. The algorithms include (but not limited to) topics such as seraching, sorting, graph, and string theory.
+
+This project is inspired from the textbook `Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne <http://amzn.to/13VNJi7>`_.
+
 
 * Free software: BSD license
 * Documentation: http://python_algorithms.rtfd.org.
-
-Features
---------
-
-* TODO
