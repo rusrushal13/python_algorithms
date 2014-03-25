@@ -16,7 +16,7 @@ Python Algorithms contains a collection of useful algorithms written in python. 
 
 This project is inspired from the textbook Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne and associated booksite http://algs4.cs.princeton.edu/home/. The goal of this book is summarized in the following excerpt from the booksite:
 
-	Our original goal for this book was to cover the 50 algorithms that every programmer should know. We use the word programmer to refer to anyone engaged in trying to accomplish something with the help of a computer, including scientists, engineers, and applications developers, not to mention college students in science, engineering, and computer science.
+    Our original goal for this book was to cover the 50 algorithms that every programmer should know. We use the word programmer to refer to anyone engaged in trying to accomplish something with the help of a computer, including scientists, engineers, and applications developers, not to mention college students in science, engineering, and computer science.
 
 However, the algorithms for this project are not simply a ported version of the algorithms found in the book. Rather they are implemented from the scratch following Pythonic coding style. Most of the algorithms are well known and can be found in many books and sites.
 
@@ -55,38 +55,38 @@ Specialized searching algorithms and/or corresponding data structures are includ
 Although some of the following data structures, such as Hash, are implemented in python, they have been implemented for demonstration purpose.
 Unless, specific needs arise, the built-in data structures should be preferred in production code.
 
-	* BST
-	* Red black BST
-	* Hash
+* BST
+* Red black BST
+* Hash
 
 Sorting
 =======
 
-	* Insertion
-	* Selection
-	* Merge
-	* Quick
-	* Quick 3 way
-	* Shell
-	* Heap
+* Insertion
+* Selection
+* Merge
+* Quick
+* Quick 3 way
+* Shell
+* Heap
 
 Graph
 =====
 
-	* Graph
-	* Directed graph
-	* BFS
-	* BFS paths
-	* DFS
-	* DFS paths
-	* Topological
+* Graph
+* Directed graph
+* BFS
+* BFS paths
+* DFS
+* DFS paths
+* Topological
 
 String
 ======
 
-	* LSD
-	* MSD
-	* Quick 3 string
-	* TST
-	* KMP
-	* Rabin karp
+* LSD
+* MSD
+* Quick 3 string
+* TST
+* KMP
+* Rabin karp
