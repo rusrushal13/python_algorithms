@@ -8,18 +8,6 @@ Subpackages
 
     python_algorithms.basic
 
-Submodules
-----------
-
-python_algorithms.python_algorithms module
-------------------------------------------
-
-.. automodule:: python_algorithms.python_algorithms
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-
 Module contents
 ---------------
 
