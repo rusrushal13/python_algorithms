@@ -1,27 +1,29 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-def binary_search(array, key):
-    """ Serach location of key in sorted array.
+"""This module implements a binary search method."""
 
-    The method searches the location of the key in the array using binary searching algorithm.
-    If it does not find the key, it return -1.
+def search(seq, val):
+    """Search location of key in a sorted list.
+
+    The method searches the location of a value in a list using binary searching algorithm.
+    If it does not find the value, it return -1.
 
     Args:
-        array: A sorted array where to search the key.
-        key: A key to search for.
+        seq: A sorted list where to search the value.
+        val: A value to search for.
 
     Returns:
-        The location of the key in the array if found.
+        The location of the value in the sorted list if found.
         Otherwise returns -1.
     """
 
-    lo, hi = 0, len(array)-1
+    lo, hi = 0, len(seq)-1
     while lo <= hi:
         mid = (lo + hi) // 2
-        if key < array[mid]:
+        if val < seq[mid]:
             hi = mid - 1
-        elif key > array[mid]:
+        elif val > seq[mid]:
             lo = mid + 1
         else:
             return mid
@@ -33,11 +35,11 @@ if __name__ == "__main__":
 
     print("Binary search")
     print("Generating a list with random numbers (1-100)")
-    n = int(raw_input("How many numbers to genereate: "))
-    array = sorted(list(set([random.randint(1, 100) for i in range(n)])))
+    n = int(raw_input("How many numbers to generate: "))
+    seq = sorted(list(set([random.randint(1, 100) for i in range(n)])))
 
     x = int(raw_input("Enter a number to search: "))
-    p = binary_search(array, x)
+    p = search(seq, x)
 
     if p == -1:
         print(str(x) + " is not in the list")

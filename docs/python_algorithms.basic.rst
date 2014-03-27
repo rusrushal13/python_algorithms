@@ -12,6 +12,30 @@ python_algorithms.basic.binary_search module
     :undoc-members:
     :show-inheritance:
 
+python_algorithms.basic.knuth_shuffle module
+--------------------------------------------
+
+.. automodule:: python_algorithms.basic.knuth_shuffle
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+python_algorithms.basic.queue module
+------------------------------------
+
+.. automodule:: python_algorithms.basic.queue
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+python_algorithms.basic.stack module
+------------------------------------
+
+.. automodule:: python_algorithms.basic.stack
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 
 Module contents
 ---------------
