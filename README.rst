@@ -5,11 +5,14 @@ Python Algorithms
 .. image:: https://badge.fury.io/py/python_algorithms.png
     :target: http://badge.fury.io/py/python_algorithms
     
-.. image:: https://travis-ci.org/mihassan/python_algorithms.png?branch=master
+.. image:: https://travis-ci.org/mihassan/python_algorithms.png?branch=develop
         :target: https://travis-ci.org/mihassan/python_algorithms
 
+.. image:: https://coveralls.io/repos/mihassan/python_algorithms/badge.png
+        :target: https://coveralls.io/r/mihassan/python_algorithms
+
 .. image:: https://pypip.in/d/python_algorithms/badge.png
-        :target: https://crate.io/packages/python_algorithms?version=latest
+        :target: https://pypi.python.org/pypi/python_algorithms
 
 
 Python Algorithms contains a collection of useful algorithms written in python. The algorithms include (but not limited to) topics such as searching, sorting, graph, and string theory.
