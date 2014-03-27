@@ -11,9 +11,6 @@ Python Algorithms
 .. image:: https://coveralls.io/repos/mihassan/python_algorithms/badge.png?branch=develop
         :target: https://coveralls.io/r/mihassan/python_algorithms?branch=develop
 
-.. image:: http://img.shields.io/pypi/dm/python_algorithms.svg
-        :target: https://pypi.python.org/pypi/python_algorithms
-
 
 Python Algorithms contains a collection of useful algorithms written in python. The algorithms include (but not limited to) topics such as searching, sorting, graph, and string theory.
 
