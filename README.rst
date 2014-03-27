@@ -8,10 +8,10 @@ Python Algorithms
 .. image:: https://travis-ci.org/mihassan/python_algorithms.png?branch=develop
         :target: https://travis-ci.org/mihassan/python_algorithms
 
-.. image:: https://coveralls.io/repos/mihassan/python_algorithms/badge.png
-        :target: https://coveralls.io/r/mihassan/python_algorithms
+.. image:: https://coveralls.io/repos/mihassan/python_algorithms/badge.png?branch=develop
+        :target: https://coveralls.io/r/mihassan/python_algorithms?branch=develop
 
-.. image:: https://pypip.in/d/python_algorithms/badge.png
+.. image:: http://img.shields.io/pypi/dm/python_algorithms.svg
         :target: https://pypi.python.org/pypi/python_algorithms
 
 
