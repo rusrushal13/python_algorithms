@@ -8,8 +8,8 @@ Python Algorithms
 .. image:: https://travis-ci.org/mihassan/python_algorithms.png?branch=master
         :target: https://travis-ci.org/mihassan/python_algorithms
 
-.. image:: https://pypip.in/d/python_algorithms/badge.png
-        :target: https://crate.io/packages/python_algorithms?version=latest
+.. image:: https://coveralls.io/repos/mihassan/python_algorithms/badge.png?branch=master
+        :target: https://coveralls.io/r/mihassan/python_algorithms?branch=master
 
 
 Python Algorithms contains a collection of useful algorithms written in python. The algorithms include (but not limited to) topics such as searching, sorting, graph, and string theory.
