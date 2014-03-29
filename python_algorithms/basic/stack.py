@@ -3,14 +3,16 @@
 
 """This module implements a linked list based stack data structure."""
 
+
 class _Node(object):
-    """ An internal class that represents a node with a single item 
+    """ An internal class that represents a node with a single item
     and links to other nodes.
     """
-    
+
     def __init__(self, item):
         self.item = item
         self.next = None
+
 
 class Stack(object):
     """An implementation of a simple stack with linked list."""
@@ -21,8 +23,8 @@ class Stack(object):
         self._size = 0
 
     @property
-    def size(self): 
-        """The number of items in the stack."""    
+    def size(self):
+        """The number of items in the stack."""
         return self._size
 
     def isEmpty(self):
@@ -71,12 +73,11 @@ class Stack(object):
         return self._head.item
 
 if __name__ == "__main__":
-    import sys
-
     print("Stack using linked list")
     s = Stack()
     while True:
-        n = int(raw_input("Enter a number to enter or 0 to pop a number (exit when stack empty): "))
+        n = int(raw_input("Enter a number to enter or 0 to pop a number"
+                          "(exit when stack empty): "))
         if n:
             s.push(n)
             print("Pushed: " + str(s.peek()))

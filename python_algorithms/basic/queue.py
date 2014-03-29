@@ -3,8 +3,9 @@
 
 """This module implements a linked list based queue data structure."""
 
+
 class _Node(object):
-    """ An internal class that represents a node with a single value 
+    """ An internal class that represents a node with a single value
     and links to other nodes.
     """
 
@@ -12,9 +13,10 @@ class _Node(object):
         self.item = item
         self.next = None
 
+
 class Queue(object):
     """An implementation of a simple queue with linked list."""
-    
+
     def __init__(self):
         """Initializes an empty queue."""
         self._first = None
@@ -22,8 +24,8 @@ class Queue(object):
         self._size = 0
 
     @property
-    def size(self):        
-        """The number of items in the queue."""    
+    def size(self):
+        """The number of items in the queue."""
         return self._size
 
     def isEmpty(self):
@@ -36,7 +38,7 @@ class Queue(object):
         return self._size == 0
 
     def enqueue(self, item):
-        """Inserts an item to the queue."""        
+        """Inserts an item to the queue."""
         n = self._last
         self._last = _Node(item)
         if self.isEmpty():
@@ -75,12 +77,11 @@ class Queue(object):
         return self._first.item
 
 if __name__ == "__main__":
-    import sys
-
     print("Queue using linked list")
     q = Queue()
     while True:
-        n = int(raw_input("Enter a number to enter or 0 to pop a number (exit when stack empty): "))
+        n = int(raw_input("Enter a number to enter or 0 to pop a number"
+                          " (exit when stack empty): "))
         if n:
             q.enqueue(n)
             print("Pushed: " + str(n))

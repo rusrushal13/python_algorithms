@@ -3,11 +3,12 @@
 
 """This module implements a binary search method."""
 
+
 def search(seq, val):
     """Search location of key in a sorted list.
 
-    The method searches the location of a value in a list using binary searching algorithm.
-    If it does not find the value, it return -1.
+    The method searches the location of a value in a list using
+    binary searching algorithm. If it does not find the value, it return -1.
 
     Args:
         seq: A sorted list where to search the value.
@@ -30,7 +31,6 @@ def search(seq, val):
     return -1
 
 if __name__ == "__main__":
-    import sys
     import random
 
     print("Binary search")
