@@ -76,17 +76,36 @@ class Queue(object):
             raise IndexError("peek at empty queue")
         return self._first.item
 
+    def __iter__(self):
+        """Return iterator for the queue."""
+        current = self._first
+        while current:
+            yield current.item
+            current = current.next
+
+    def __str__(self):
+        """String representation of the queue."""
+
+        return " ".join([str(item) for item in self])
+
+    def __repr__(self):
+        """Representation of the queue."""
+
+        return "Queue(" + str(self) + ")"
+
 if __name__ == "__main__":
     print("Queue using linked list")
     q = Queue()
     while True:
         n = int(raw_input("Enter a number to enter or 0 to pop a number"
-                          " (exit when stack empty): "))
+                          " (exit when queue empty): "))
         if n:
             q.enqueue(n)
-            print("Pushed: " + str(n))
+            print("Queued: " + str(n))
+            print("Current queue: " + str(q))
         else:
             if q.isEmpty():
                 print("Queue is empty.")
                 break
             print("Dequeued: " + str(q.dequeue()))
+            print("Current queue: " + str(q))

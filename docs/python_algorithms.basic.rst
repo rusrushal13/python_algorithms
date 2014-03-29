@@ -4,6 +4,14 @@ python_algorithms.basic package
 Submodules
 ----------
 
+python_algorithms.basic.bag module
+----------------------------------
+
+.. automodule:: python_algorithms.basic.bag
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 python_algorithms.basic.binary_search module
 --------------------------------------------
 

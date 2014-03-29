@@ -72,6 +72,23 @@ class Stack(object):
             raise IndexError("pop from empty stack")
         return self._head.item
 
+    def __iter__(self):
+        """Return iterator for the stack."""
+        current = self._head
+        while current:
+            yield current.item
+            current = current.next
+
+    def __str__(self):
+        """String representation of the stack."""
+
+        return " ".join(reversed([str(item) for item in self]))
+
+    def __repr__(self):
+        """Representation of the stack."""
+
+        return "Stack(" + str(self) + ")"
+
 if __name__ == "__main__":
     print("Stack using linked list")
     s = Stack()
@@ -81,8 +98,10 @@ if __name__ == "__main__":
         if n:
             s.push(n)
             print("Pushed: " + str(s.peek()))
+            print("Current stack: " + str(s))
         else:
             if s.isEmpty():
                 print("Stack is empty.")
                 break
             print("Popped: " + str(s.pop()))
+            print("Current stack: " + str(s))

@@ -48,6 +48,23 @@ class TestStack(unittest.TestCase):
     def test_peek_at_stack(self):
         self.assertEqual(self.stack.peek(), self.seq[-1])
 
+    def test_iterate_empty_stack(self):
+        for curr in self.empty_stack:
+            self.assertEqual(False, True)
+
+    def test_iterate_stack(self):
+        iter_seq = []
+        for curr in self.stack:
+            iter_seq.append(curr)
+        iter_seq.reverse()
+        self.assertEqual(iter_seq, self.seq)
+
+    def test_str_empty_stack(self):
+        self.assertEqual(str(self.empty_stack), "")
+
+    def test_str_stack(self):
+        self.assertEqual(str(self.stack), " ".join([str(x) for x in self.seq]))
+
     def tearDown(self):
         pass
 
