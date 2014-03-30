@@ -33,7 +33,7 @@ def search(seq, val):
 if __name__ == "__main__":
     import random
 
-    print("Binary search")
+    print("Binary search.")
     print("Generating a list with random numbers (1-100)")
     n = int(raw_input("How many numbers to generate: "))
     seq = sorted(list(set([random.randint(1, 100) for i in range(n)])))

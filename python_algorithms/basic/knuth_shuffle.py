@@ -28,7 +28,7 @@ def shuffle(seq):
     return seq
 
 if __name__ == "__main__":
-    print("Knuth shuffle")
+    print("Knuth shuffle.")
     print("Generating a list with numbers (1-100)")
     seq = list(range(1, 101))
 

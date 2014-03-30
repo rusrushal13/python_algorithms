@@ -5,7 +5,7 @@
 
 
 class _Node(object):
-    """ An internal class that represents a node with a single item
+    """An internal class that represents a node with a single item
     and links to other nodes.
     """
 
@@ -18,7 +18,7 @@ class Stack(object):
     """An implementation of a simple stack with linked list."""
 
     def __init__(self):
-        """Initializes an empty stack."""
+        """Initialize an empty stack."""
         self._head = None
         self._size = 0
 
@@ -37,7 +37,7 @@ class Stack(object):
         return self._size == 0
 
     def push(self, item):
-        """Inserts an item to the stack."""
+        """Insert an item to the stack."""
         n = _Node(item)
         n.next = self._head
         self._head = n
@@ -90,7 +90,7 @@ class Stack(object):
         return "Stack(" + str(self) + ")"
 
 if __name__ == "__main__":
-    print("Stack using linked list")
+    print("Stack using linked list.")
     s = Stack()
     while True:
         n = int(raw_input("Enter a number to enter or 0 to pop a number"
