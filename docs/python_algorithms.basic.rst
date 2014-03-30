@@ -44,6 +44,14 @@ python_algorithms.basic.stack module
     :undoc-members:
     :show-inheritance:
 
+python_algorithms.basic.union_find module
+-----------------------------------------
+
+.. automodule:: python_algorithms.basic.union_find
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 
 Module contents
 ---------------

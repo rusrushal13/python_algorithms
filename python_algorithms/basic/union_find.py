@@ -3,6 +3,7 @@
 
 """This module implements an union find or disjoint set data structure."""
 
+
 class UF:
     """An implementation of union find data structure.
     It uses weighted quick union by rank with path compression.
@@ -18,7 +19,7 @@ class UF:
         self._id = list(range(N))
         self._count = N
         self._rank = [0] * N
-            
+
     def find(self, p):
         """Find the set identifier for the item p."""
 
@@ -26,7 +27,7 @@ class UF:
         while p != id[p]:
             p = id[p] = id[id[p]]   # Path compression using halving.
         return p
-    
+
     def count(self):
         """Return the number of items."""
 
@@ -45,7 +46,7 @@ class UF:
 
         i = self.find(p)
         j = self.find(q)
-        if i==j:
+        if i == j:
             return
 
         self._count -= 1
@@ -59,15 +60,15 @@ class UF:
 
     def __str__(self):
         """String representation of the union find object."""
-        
+
         return " ".join([str(x) for x in self._id])
 
     def __repr__(self):
         """Representation of the union find object."""
-        
+
         return "UF(" + str(self) + ")"
 
-if __name__=="__main__":
+if __name__ == "__main__":
     print("Union find data structure.")
     N = int(raw_input("Enter number of items: "))
     uf = UF(N)
