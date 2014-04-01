@@ -18,6 +18,14 @@ Contents:
    authors
    history
 
+API Reference
+=============
+
+.. toctree::
+   :maxdepth: 2
+
+   python_algorithms
+
 Indices and tables
 ==================
 
