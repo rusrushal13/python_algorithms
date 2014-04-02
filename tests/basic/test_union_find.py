@@ -30,6 +30,29 @@ class TestUnionFind(unittest.TestCase):
         self.assertEqual(self.uf.count(), n)
         self.assertEqual(self.count_sets(), n)
 
+    def test_find(self):
+        for i in range(self.N):
+            self.assertEqual(self.uf.find(i), i)
+
+        for x, y in self.pairs:
+            self.uf.union(x, y)
+
+        for x, y in self.pairs:
+            self.assertEqual(self.uf.find(x), self.uf.find(y))
+
+    def test_connected(self):
+        for i in range(self.N):
+            for j in range(self.N):
+                if i == j:
+                    continue
+                self.assertFalse(self.uf.connected(i, j))
+
+        for x, y in self.pairs:
+            self.uf.union(x, y)
+
+        for x, y in self.pairs:
+            self.assertTrue(self.uf.connected(x, y))
+
     def test_str_empty_uf(self):
         self.assertEqual(str(UF(0)), "")
 
