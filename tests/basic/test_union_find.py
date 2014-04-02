@@ -33,7 +33,7 @@ class TestUnionFind(unittest.TestCase):
     def test_str_empty_uf(self):
         self.assertEqual(str(UF(0)), "")
 
-    def test_str_stack(self):
+    def test_str_uf(self):
         self.assertEqual(str(self.uf), " ".join([str(x) for x in range(self.N)]))
 
     def count_sets(self):
