@@ -1,12 +1,38 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""This module implements a linked list based stack data structure."""
+"""This module implements a linked list based stack data structure.
+
+A stack is a data structure to hold a collection of items in which operations
+such as the addition of an item (*push*) and removal of an item (*pop*) can
+be performed. The items are always pushed or popped from the so called  *top*
+of the data structure which is the last item added or first item to be  removed.
+The stack can be also viewed as a Last-In-First-Out(*LIFO*) data structure. In
+a LIFO data structure, the last element added to the structure  must be the
+first one to be removed. Apart from those two operations, *peek*  operation
+can also be implemented, returning the value of the top item without removing
+it.
+
+The particular implementation of stack in this module is based on linked list, 
+as array based stack implementation is already supported in python's list. In 
+the linked list based implementation, only the stack object need to keep track
+of only the head node where each node contains an item and a link to the next 
+node.
+
+..  note:: For most practical purposes, the python's list suffices as a stack
+    object. Use append method instead of push and pop method as it is for 
+    stack operations in a list.
+
+Complexity:
+    * push -- O(1)
+    * pop  -- O(1)
+    * peek -- O(1)
+"""
 
 
 class _Node(object):
     """An internal class that represents a node with a single item
-    and links to other nodes.
+    and a link to the next node.
     """
 
     def __init__(self, item):
