@@ -12,34 +12,52 @@ Python Algorithms
         :target: https://coveralls.io/r/mihassan/python_algorithms?branch=develop
 
 
-Python Algorithms contains a collection of useful algorithms written in python. The algorithms include (but not limited to) topics such as searching, sorting, graph, and string theory.
+Python Algorithms contains a collection of useful algorithms written in python.
+The algorithms include (but not limited to) topics such as searching, sorting,
+graph, and string theory.
 
-This project is inspired from the textbook Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne and associated booksite http://algs4.cs.princeton.edu/home/. The goal of this book is summarized in the following excerpt from the booksite:
+This project is inspired from the textbook Algorithms, 4th Edition by Robert
+Sedgewick and Kevin Wayne and associated book-site
+http://algs4.cs.princeton.edu/home/. The goal of this book is summarized in the
+following excerpt from the book-site:
 
-    Our original goal for this book was to cover the 50 algorithms that every programmer should know. We use the word programmer to refer to anyone engaged in trying to accomplish something with the help of a computer, including scientists, engineers, and applications developers, not to mention college students in science, engineering, and computer science.
+    Our original goal for this book was to cover the 50 algorithms that every
+    programmer should know. We use the word programmer to refer to anyone
+    engaged in trying to accomplish something with the help of a computer,
+    including scientists, engineers, and applications developers, not to mention
+    college students in science, engineering, and computer science.
 
-However, the algorithms for this project are not simply a ported version of the algorithms found in the book. Rather they are implemented from the scratch following Pythonic coding style. Most of the algorithms are well known and can be found in many books and sites.
+However, the algorithms for this project are not meant to be a ported version of
+the algorithms found in the book. Efforts should be made to implement those
+algorithms from the scratch following Pythonic coding style. Some of the
+algorithms are well known and the reference for those algorithms should appear
+in the documentation. While, some of the algorithms are very specific and
+difficult implement in a different way while maintaining accuracy and
+efficiency. Such algorithms appear in the scientific literatures and/or books
+and those should be properly referenced as well.
 
 Features
 --------
 
-* Mainly for educational purpose, but can be useful in certain situations.
-* Consequently, built-in algorithms are not used, rather fully implemented from the scratch.
-* Preference towards pythonic code rather than OOP.
-* Free software: BSD license
+* Mainly for educational purposes, but can be useful in certain practical scenarios as well.
+* Consequently, built-in algorithms are avoided as much as possible and detailed
+  implementation is done from the scratch.
+* Preference is given towards a pythonic style rather than sticking to true OOP style.
+* Free software: BSD license.
 * Documentation: http://python_algorithms.rtfd.org.
 
 Algorithms
 ----------
 
 Here is a list of algorithms divided into packages. 
-Note that, all of the algorithms have not yet been implemented.
+
+.. Note:: Not all of the algorithms have been fully implemented yet.
 
 Basic
 =====
 
-A collection of few basic algorithms that do not fit in other packages. 
-Trivial algorithms and data structures that are built into python are skipped.
+A collection of few basic algorithms that do not fit in other packages. Trivial
+algorithms and data structures that are built into python are skipped.
 
 * Binary search
 * Knuth shuffle
@@ -47,6 +65,8 @@ Trivial algorithms and data structures that are built into python are skipped.
 * Queue
 * Bag
 * Union find
+
+:Estimated Release: 0.2.0
 
 Searching
 =========
@@ -59,6 +79,8 @@ Unless, specific needs arise, the built-in data structures should be preferred i
 * Red black BST
 * Hash
 
+:Estimated Release: 0.3.0
+
 Sorting
 =======
 
@@ -69,6 +91,8 @@ Sorting
 * Quick 3 way
 * Shell
 * Heap
+
+:Estimated Release: 0.4.0
 
 Graph
 =====
@@ -81,6 +105,8 @@ Graph
 * DFS paths
 * Topological
 
+:Estimated Release: 0.5.0
+
 String
 ======
 
@@ -90,3 +116,6 @@ String
 * TST
 * KMP
 * Rabin karp
+
+:Estimated Release: 0.6.0
+

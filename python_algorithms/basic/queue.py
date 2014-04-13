@@ -1,7 +1,32 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""This module implements a linked list based queue data structure."""
+"""This module implements a linked list based queue data structure.
+
+A queue is a data structure to hold a collection of items in order ad which
+supports operations such as the addition of an item (*enqueue*) and removal of
+an item (*dequeue*) can be performed. The items are always enqueued at the rear
+end of the queue and dequeued from the front end of the queue. As such, the
+queue can be also viewed as a First-In-First-Out(*FIFO*) data structure. In a
+FIFO data structure, the first item added to the structure is the first one to
+be removed. Apart from those two operations, *peek*  operation can also be
+implemented, returning the value at the front end without removing it.
+
+The particular implementation of queue in this module is based on linked list,
+as array based queue implementation is already supported in python's list. In
+the linked list based implementation, the queue object need to keep track of
+the front and the rear nodes where each node contains an item and a link to the
+next node.
+
+..  note:: For most practical purposes, the python's implementation as dequeue
+    suffices as a queue object. Use append method instead of enqueue and
+    popleft method instead of dequeue for queue operations in a list.
+
+Complexity:
+    * push -- O(1)
+    * pop  -- O(1)
+    * peek -- O(1)
+"""
 
 
 class _Node(object):
