@@ -5,11 +5,11 @@ Python Algorithms
 .. image:: https://badge.fury.io/py/python_algorithms.png
     :target: http://badge.fury.io/py/python_algorithms
     
-.. image:: https://travis-ci.org/mihassan/python_algorithms.png?branch=develop
+.. image:: https://travis-ci.org/mihassan/python_algorithms.png?branch=master
         :target: https://travis-ci.org/mihassan/python_algorithms
 
-.. image:: https://coveralls.io/repos/mihassan/python_algorithms/badge.png?branch=develop
-        :target: https://coveralls.io/r/mihassan/python_algorithms?branch=develop
+.. image:: https://coveralls.io/repos/mihassan/python_algorithms/badge.png?branch=master
+        :target: https://coveralls.io/r/mihassan/python_algorithms?branch=master
 
 
 Python Algorithms contains a collection of useful algorithms written in python.

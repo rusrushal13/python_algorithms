@@ -7,3 +7,14 @@ History
 ++++++++++++++++++
 
 * First release on PyPI.
+
+0.2.0 (2014-04-15)
+++++++++++++++++++
+
+* Implemented the following data structures and algorithms:
+    * Binary search
+    * Knuth shuffle
+    * Stack
+    * Queue
+    * Bag
+    * Union find
