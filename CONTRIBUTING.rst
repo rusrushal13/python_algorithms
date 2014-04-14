@@ -74,6 +74,14 @@ Ready to contribute? Here's how to set up `python_algorithms` for local developm
    
    Now you can make your changes locally.
 
+   Alternatively, use git flow to start a new feature or bugfix branch and work
+   on that branch locally. Once, ready to publish, push the branch to github::
+
+    $ git flow feature start name-of-feature
+    $ echo "Develop the feature on this feature branch"
+    $ git flow feature finish
+    $ git push
+
 5. When you're done making changes, check that your changes pass flake8 and the tests, including testing other Python versions with tox::
 
     $ flake8 python_algorithms tests
