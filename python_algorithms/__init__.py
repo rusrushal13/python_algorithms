@@ -5,4 +5,4 @@
 
 __author__ = 'Md. Imrul Hassan'
 __email__ = 'mihassan@gmail.com'
-__version__ = '0.2.0'
+__version__ = '0.2.1'

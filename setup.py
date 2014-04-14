@@ -6,7 +6,7 @@ import sys
 
 
 try:
-    from setuptools import setup
+    from setuptools import setup, find_packages
 except ImportError:
     from distutils.core import setup
 
@@ -19,16 +19,13 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='python_algorithms',
-    version='0.2.0',
+    version='0.2.1',
     description='Python Algorithms contains a collection of useful algorithms written in python.',
     long_description=readme + '\n\n' + history,
     author='Md. Imrul Hassan',
     author_email='mihassan@gmail.com',
     url='https://github.com/mihassan/python_algorithms',
-    packages=[
-        'python_algorithms',
-    ],
-    package_dir={'python_algorithms': 'python_algorithms'},
+    packages=find_packages(),
     include_package_data=True,
     install_requires=[
     ],
