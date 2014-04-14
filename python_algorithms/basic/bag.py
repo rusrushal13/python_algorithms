@@ -1,7 +1,27 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""This module implements a bag or multiset data structure."""
+"""This module implements a bag or multiset data structure.
+
+A bag or multiset is a generalization of the set data structure which allows
+repeated or duplicate items to be stored. Items can only be added to the bag
+and may not be removed. When the items in the bag are iterated there is not
+restriction  on the ordering of the items.
+
+In this module, the implementation of bag is similar to a linked list based
+stack implementation. In the linked list based implementation, the bag object
+need to keep track of only the head node. Each node contains an item and a link
+to the next node.
+
+..  note:: Python' has a built-in class `collections.Counter
+    <https://docs.python.org/2/library/collections.html#collections.Counter>`_
+    which is similar to a bag or multiset. instead of adding an item, 1 need to
+    be added with the counter associated with that item and elements return all
+    items (including duplicates) in the bag.
+
+Complexity:
+    * add -- O(1)
+"""
 
 
 class _Node(object):

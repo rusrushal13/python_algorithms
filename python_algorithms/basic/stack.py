@@ -15,7 +15,7 @@ also be implemented, returning the value of the top item without removing it.
 The particular implementation of stack in this module is based on linked list,
 as array based stack implementation is already supported in python's list. In
 the linked list based implementation, the stack object need to keep track of
-only the head node where each node contains an item and a link to the next node.
+only the head node. Each node contains an item and a link to the next node.
 
 ..  note:: For most practical purposes, the python's list suffices as a stack
     object. Use append method instead of push and pop method as it is for
