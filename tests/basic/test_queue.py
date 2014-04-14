@@ -50,6 +50,22 @@ class TestQueue(unittest.TestCase):
     def test_peek_at_queue(self):
         self.assertEqual(self.queue.peek(), self.seq[0])
 
+    def test_iterate_empty_queue(self):
+        for curr in self.empty_queue:
+            self.assertEqual(False, True)
+
+    def test_iterate_queue(self):
+        iter_seq = []
+        for curr in self.queue:
+            iter_seq.append(curr)
+        self.assertEqual(iter_seq, self.seq)
+
+    def test_str_empty_queue(self):
+        self.assertEqual(str(self.empty_queue), "")
+
+    def test_str_queue(self):
+        self.assertEqual(str(self.queue), " ".join([str(x) for x in self.seq]))
+
     def tearDown(self):
         pass
 

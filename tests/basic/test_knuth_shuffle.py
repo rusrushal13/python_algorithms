@@ -8,7 +8,6 @@ test_knuth_shuffle
 Tests for `python_algorithms.knuth_shuffle` module.
 """
 
-import random
 import unittest
 
 from python_algorithms.basic import knuth_shuffle as ks

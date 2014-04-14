@@ -3,7 +3,9 @@
 
 """This module implements a shuffle method using Knuth's algorithm."""
 
+
 import random
+
 
 def shuffle(seq):
     """Shuffle a list randomly using Knuth's algorithm.
@@ -26,9 +28,9 @@ def shuffle(seq):
     return seq
 
 if __name__ == "__main__":
-    print("Knuth shuffle")
+    print("Knuth shuffle.")
     print("Generating a list with numbers (1-100)")
-    seq = list(range(1,101))
+    seq = list(range(1, 101))
 
     print("The list after shuffling: ")
     shuffle(seq)
