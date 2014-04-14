@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+    #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 """
@@ -57,7 +57,8 @@ class TestUnionFind(unittest.TestCase):
         self.assertEqual(str(UF(0)), "")
 
     def test_str_uf(self):
-        self.assertEqual(str(self.uf), " ".join([str(x) for x in range(self.N)]))
+        s = " ".join([str(x) for x in range(self.N)])
+        self.assertEqual(str(self.uf), s)
 
     def count_sets(self):
         return len(set([self.uf.find(x) for x in range(self.N)]))
