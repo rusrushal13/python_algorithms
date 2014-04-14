@@ -110,12 +110,10 @@ class Queue(object):
 
     def __str__(self):
         """String representation of the queue."""
-
         return " ".join([str(item) for item in self])
 
     def __repr__(self):
         """Representation of the queue."""
-
         return "Queue(" + str(self) + ")"
 
 if __name__ == "__main__":

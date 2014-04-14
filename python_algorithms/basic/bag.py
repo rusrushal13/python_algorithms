@@ -72,12 +72,10 @@ class Bag(object):
 
     def __str__(self):
         """String representation of the bag."""
-
         return " ".join([str(item) for item in self])
 
     def __repr__(self):
         """Representation of the bag."""
-
         return "Bag(" + str(self) + ")"
 
 if __name__ == "__main__":

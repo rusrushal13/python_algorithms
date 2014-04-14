@@ -105,12 +105,10 @@ class Stack(object):
 
     def __str__(self):
         """String representation of the stack."""
-
         return " ".join(reversed([str(item) for item in self]))
 
     def __repr__(self):
         """Representation of the stack."""
-
         return "Stack(" + str(self) + ")"
 
 if __name__ == "__main__":

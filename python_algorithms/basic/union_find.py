@@ -60,12 +60,10 @@ class UF:
 
     def __str__(self):
         """String representation of the union find object."""
-
         return " ".join([str(x) for x in self._id])
 
     def __repr__(self):
         """Representation of the union find object."""
-
         return "UF(" + str(self) + ")"
 
 if __name__ == "__main__":
