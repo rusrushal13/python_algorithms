@@ -1,17 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""This module implements a binary search method."""
+"""This module implements binary search method."""
 
 
-def search(seq, val):
+def binarySearch(seq, val):
     """Search location of key in a sorted list.
 
     The method searches the location of a value in a list using
-    binary searching algorithm. If it does not find the value, it return -1.
+    binary searching algorithm. If it does not find the value, it returns -1.
 
     Args:
-        seq: A sorted list where to search the value.
+        seq: A sorted list from which the value(val) has to be searched.
         val: A value to search for.
 
     Returns:
@@ -35,13 +35,14 @@ if __name__ == "__main__":
 
     print("Binary search.")
     print("Generating a list with random numbers (1-100)")
-    n = int(raw_input("How many numbers to generate: "))
+    n = input("How many numbers to generate: ")  # We should simply use input(), if we know that the input is a number
     seq = sorted(list(set([random.randint(1, 100) for i in range(n)])))
-
-    x = int(raw_input("Enter a number to search: "))
-    p = search(seq, x)
+    # It should print out the sequence as well
+    print seq
+    x = input("Enter the number to search for: ")
+    pos = binarySearch(seq, x)
 
     if p == -1:
         print(str(x) + " is not in the list")
     else:
-        print("Found at position " + str(p))
+        print("Found! at position " + str(pos))
