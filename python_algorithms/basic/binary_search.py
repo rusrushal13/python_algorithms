@@ -4,7 +4,7 @@
 """This module implements binary search method."""
 
 
-def binarySearch(seq, val):
+def search(seq, val):
     """Search location of key in a sorted list.
 
     The method searches the location of a value in a list using
@@ -37,10 +37,9 @@ if __name__ == "__main__":
     print("Generating a list with random numbers (1-100)")
     n = input("How many numbers to generate: ")  # We should simply use input(), if we know that the input is a number
     seq = sorted(list(set([random.randint(1, 100) for i in range(n)])))
-    # It should print out the sequence as well
-    print seq
+    
     x = input("Enter the number to search for: ")
-    pos = binarySearch(seq, x)
+    pos = search(seq, x)
 
     if p == -1:
         print(str(x) + " is not in the list")
